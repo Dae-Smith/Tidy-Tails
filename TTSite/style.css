@@ -1,0 +1,291 @@
+/* General Reset and Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefaf5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff3e6;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .logo img {
+    width: 120px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #4a3c2f;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 5%;
+    background-color: #f9f3ea;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #8b5e3c;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .quote-form input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+  }
+  
+  .quote-form button {
+    padding: 0.6rem 1.2rem;
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .watch-video {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #f97316;
+    font-weight: bold;
+  }
+  
+  .hero-img {
+    max-width: 45%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Services */
+  .services {
+    padding: 3rem 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    color: #8b5e3c;
+    margin-bottom: 2rem;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .card {
+    flex: 1 1 30%;
+    padding: 1.5rem;
+    background-color: #fef0dd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+    color: #4a3c2f;
+  }
+  
+  /* Why Us */
+  .why-us {
+    padding: 2rem;
+    background-color: #fffaf3;
+  }
+  
+  .why-us h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #8b5e3c;
+  }
+  
+  .why-us ul {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background: #eac29a;
+    color: #4a3c2f;
+    padding: 2rem;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-columns div {
+    flex: 1 1 30%;
+    padding: 0.5rem;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  footer h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer p, footer li {
+    font-size: 0.95rem;
+  }
+  
+  footer .copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+  }
+
+  /* === Responsive Media Queries === */
+
+/* Tablets (up to 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p,
+  .quote-form input,
+  .quote-form button {
+    font-size: 1rem;
+  }
+
+  .about-details .container,
+  .contact-section,
+  .careers-content,
+  .team-members {
+    padding: 1rem;
+  }
+
+  .member {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .member img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .quote-form input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .quote-form button {
+    width: 100%;
+  }
+
+  form.contact-form input,
+  form.contact-form textarea,
+  form.contact-form button {
+    width: 100%;
+  }
+}
+
+/* Very small devices (up to 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
